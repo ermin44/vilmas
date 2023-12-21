@@ -1,0 +1,73 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+:root {
+    /* Primary color for brand */
+    --primary-color: #F4BFDB;
+  
+    /* Secondary colors for UI elements and backgrounds */
+    --secondary-color-1: #756AB6;
+    --secondary-color-2: #FFE9F3;
+  
+    /* Accent color for calls-to-action and important elements */
+    --accent-color: #B27092;
+  
+    /* Background color for the overall website */
+    --background-color: #E0AED0;
+  
+    /* Text color for content and headings */
+    --text-color: #ffffff;
+}
+.bsb-hero-5 {
+    position: relative;
+    background-image: url('/images/hero4.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Adjust the height as needed */
+}
+
+.my-custom-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /* Adjust padding as needed */
+    z-index: 10; /* Ensure the header is above the hero image */
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Make the div take the full height of the parent */
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.kontakt-knap {
+    margin-right: 15px;
+  }
+
+.blog-knap {
+    margin-right: 15px;
+}
+.header-icon-adjusted {
+    display: block; 
+    width: 90px;
+    height: auto; 
+    margin-top: 12px;
+    margin-left: 10px; 
+}
+.bi-hospital {
+    margin-top: 5px;
+}
+.about-me-section {
+    background-color: var(--secondary-color-2);
+}
+.features-section {
+    background-color: var(--secondary-color-2);
+}
