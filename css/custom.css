@@ -11977,13 +11977,13 @@ textarea.form-control-lg {
 }
 .blog-section {
   background-color: var(--secondary-color-2);
+  
 }
 
 .filler-section {
   background-color: var(--secondary-color-2); /* Use your CSS variable for the background color */
   height: 500px; /* Adjust the height as needed */
 }
-
 
 .features-section {
   background-color: var(--secondary-color-2);
@@ -12019,5 +12019,9 @@ textarea.form-control-lg {
 .hover-button:hover{
   transform: scale(1.1); /* Increase size of the button */
   font-size: 26px; /* Increase font size */
+}
+.footer-custom {
+  background-color: var(--secondary-color-2);
+  
 }
 /*# sourceMappingURL=custom.css.map */
