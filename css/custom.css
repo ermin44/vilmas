@@ -2965,19 +2965,19 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #55c2da;
-  --bs-btn-border-color: #55c2da;
+  --bs-btn-bg: #0d6efd;
+  --bs-btn-border-color: #0d6efd;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #3da3b9;
-  --bs-btn-hover-border-color: #71daf1;
+  --bs-btn-hover-bg: #0b5ed7;
+  --bs-btn-hover-border-color: #0a58ca;
   --bs-btn-focus-shadow-rgb: 49, 132, 253;
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: #0a58ca;
-  --bs-btn-active-border-color: #96e5f7;
+  --bs-btn-active-border-color: #0a53be;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #55c2da;
-  --bs-btn-disabled-border-color: #55c2da;
+  --bs-btn-disabled-bg: #0d6efd;
+  --bs-btn-disabled-border-color: #0d6efd;
 }
 
 .btn-secondary {
@@ -11870,65 +11870,60 @@ textarea.form-control-lg {
   --button-color: #55c2da;
 }
 
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #55c2da;
+  --bs-btn-border-color: #55c2da;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #4da8c9;
+  --bs-btn-hover-border-color: #6bd3e5;
+  --bs-btn-focus-shadow-rgb: 255, 193, 7;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #3993a6;
+  --bs-btn-active-border-color: #50b4c8;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #55c2da;
+  --bs-btn-disabled-border-color: #55c2da;
+}
+
 .bsb-hero-5 {
   position: relative;
-  background-image: url('/images/hero5.png');
+  background-image: url("/images/hero5.png");
   background-size: cover;
   background-position: center bottom;
-  height: 120vh; 
+  height: 120vh;
   background-repeat: no-repeat;
 }
+
 .bsb-hero-5::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 80px;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.3); 
+  background: rgba(0, 0, 0, 0.3);
   z-index: 1;
 }
-.my-custom-header {
+
+.custom-header {
   position: absolute;
   top: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px; 
-  z-index: 10; 
-}
-.header-buttons, .header-center, .header-icons {
-  flex: 1; 
-  display: flex;
-  justify-content: center; 
-  align-items: center;
-}
-
-.header-buttons {
-  justify-content: flex-start; 
-}
-
-.header-icons {
-  justify-content: flex-end; 
-}
-
-.hero-content {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  text-align: center;
-  top: -220px;
+  padding: 10px;
+  z-index: 10;
 }
 
 .text-center {
   text-align: center;
 }
-.hero-content.text-center h1 {
+
+.hero-content.text-center h1, .hero-content.text-center .h1 {
   font-weight: bold;
   letter-spacing: 0.05em;
   line-height: 1.4;
@@ -11943,9 +11938,62 @@ textarea.form-control-lg {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+.portrait-img {
+  margin-top: -500px; /* Adjust the value as needed */
+}
+
+@media (max-width: 768px) {
+  .custom-header {
+    margin: 5px;
+  }
+  .custom-header .button-class {
+    font-size: 1.5em; /* Increase button text size */
+    padding: 10px 20px; /* Increase button padding */
+    background-color: #ff0000; /* Distinct color for testing */
+  }
+  .custom-header .icon-class {
+    width: 50px; /* Increase icon width */
+    height: 50px; /* Increase icon height */
+  }
+  .hero-content.text-center h1, .hero-content.text-center .h1 {
+    margin-top: 65px;
+    font-size: 3rem;
+  }
+  .hero-content p {
+    margin-top: 35px;
+  }
+  .portrait-img {
+    margin-top: -300px;
+  }
+}
+.header-buttons, .header-center, .header-icons {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-buttons {
+  justify-content: flex-start;
+}
+
+.header-icons {
+  justify-content: flex-end;
+}
+
+.hero-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  top: -220px;
+}
 
 .kontakt-knap {
-  margin-right: 15px; 
+  margin-right: 15px;
 }
 
 .blog-knap {
@@ -11953,31 +12001,27 @@ textarea.form-control-lg {
 }
 
 .header-icon-adjusted {
-  display: block; 
-  width: 100px;
-  height: auto; 
-  margin-top: 12px; 
-  margin-left: 10px; 
+  display: block;
+  width: 72px;
+  height: auto;
+  margin-top: 12px;
+  margin-left: 10px;
 }
 
 .bi-hospital {
   margin-bottom: 10px;
 }
 
-.portrait-img {
-  margin-top: -500px; /* Adjust the value as needed */
-}
-
 .about-me-section {
   background-color: var(--secondary-color-2);
 }
-.getintouch
-{
+
+.getintouch {
   background-color: var(--secondary-color-2);
 }
+
 .blog-section {
   background-color: var(--secondary-color-2);
-  
 }
 
 .filler-section {
@@ -11988,14 +12032,17 @@ textarea.form-control-lg {
 .features-section {
   background-color: var(--secondary-color-2);
 }
+
 .card {
   background-color: var(--background-color);
   height: 460px;
 }
+
 .custom-features-icon {
-  fill:white;
+  fill: white;
   color: white;
 }
+
 .custom-features-btn {
   background-color: palevioletred; /* Background color */
   color: white; /* Text color */
@@ -12003,25 +12050,28 @@ textarea.form-control-lg {
   font-size: 16px;
   transition: transform 0.2s ease, font-size 0.2s ease;
   padding-top: 8px; /* Adjust this value as needed */
-  padding-bottom: 10px; 
-
+  padding-bottom: 10px;
 }
+
 .custom-features-btn:hover {
-  background-color: #d4758ea1; /* A darker shade of palevioletred for hover */
+  background-color: rgba(212, 117, 142, 0.631372549); /* A darker shade of palevioletred for hover */
   color: white;
   transform: scale(1.1); /* Increase size of the button */
   font-size: 18px; /* Increase font size */
 }
-.hover-button{
+
+.hover-button {
   transition: transform 0.2s ease, font-size 0.2s ease;
   font-size: 24px;
 }
-.hover-button:hover{
+
+.hover-button:hover {
   transform: scale(1.1); /* Increase size of the button */
   font-size: 26px; /* Increase font size */
 }
+
 .footer-custom {
   background-color: var(--secondary-color-2);
-  
 }
+
 /*# sourceMappingURL=custom.css.map */
