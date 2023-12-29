@@ -139,11 +139,11 @@ top: -220px;
 }
 
 .kontakt-knap {
-margin-right: 15px; 
+margin-right: 8px; 
 }
 
 .blog-knap {
-margin-right: 15px;
+margin-right:8px;
 }
 
 .header-icon-adjusted {
@@ -202,15 +202,17 @@ color: white;
 transform: scale(1.1); /* Increase size of the button */
 font-size: 18px; /* Increase font size */
 }
-.hover-button{
-transition: transform 0.2s ease, font-size 0.2s ease;
-font-size: 24px;
+.hover-button {
+  transition: transform 0.2s ease;
+  font-size: 22px;
+  position: relative; /* Add relative positioning */
+  z-index: 10; /* Ensure the button is above other content */
 }
-.hover-button:hover{
-transform: scale(1.1); /* Increase size of the button */
-font-size: 26px; /* Increase font size */
+
+.hover-button:hover {
+  transform: scale(1.1); /* Increase size of the button */
 }
+
 .footer-custom {
 background-color: var(--secondary-color-2);
-
 }
